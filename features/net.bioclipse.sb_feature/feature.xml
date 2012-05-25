@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.bioclipse.sb_feature"
+      label="Systems Biology Feature"
+      version="2.5.0.qualifier"
+      provider-name="Bioclipse Team"
+      plugin="net.bioclipse.sbml">
+
+   <description>
+      Systems Biology support for Bioclipse.
+   </description>
+
+   <copyright>
+      Copyright (c) 2008-2011 The Bioclipse Project Team and others.
+Eclipse Public License.
+
+This feature includes the JSBML library, which has its own license.
+   </copyright>
+
+   <requires>
+      <import plugin="net.bioclipse.core"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="net.bioclipse.scripting.ui"/>
+      <import plugin="org.eclipse.ui.views" version="3.4.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi"/>
+   </requires>
+
+   <plugin
+         id="net.bioclipse.sbml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
