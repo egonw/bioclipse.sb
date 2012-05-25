@@ -5,7 +5,8 @@ Bundle-SymbolicName: net.bioclipse.sbml; singleton:=true
 Bundle-Version: 2.5.0.qualifier
 Bundle-Activator: net.bioclipse.sbml.Activator
 Bundle-Vendor: The Bioclipse team
-Export-Package: net.bioclipse.sbml, net.bioclipse.sbml.business
+Export-Package: net.bioclipse.sbml, net.bioclipse.sbml.business,
+ org.sbml.jsbml
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  net.bioclipse.core,

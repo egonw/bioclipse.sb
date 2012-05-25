@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="SBML Editor"
+            extensions="xml"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="net.bioclipse.sbml.ui.editors.SBMLEditor"
+            id="net.bioclipse.sbml.ui.editors.SBMLEditor">
+      </editor>
+   </extension>
+
+</plugin>
