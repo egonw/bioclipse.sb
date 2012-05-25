@@ -11,11 +11,24 @@
 package net.bioclipse.sbml.business;
 
 import net.bioclipse.core.PublishedClass;
+import net.bioclipse.core.PublishedMethod;
+import net.bioclipse.core.Recorded;
+import net.bioclipse.core.business.BioclipseException;
 import net.bioclipse.managers.business.IBioclipseManager;
 
+import org.sbml.jsbml.SBMLDocument;
+
 @PublishedClass(
-    value="TODO: Describe the manager here."
+    value="Manager that uses JSBML to provide support for the SBML format.",
+    doi="10.1093/bioinformatics/btr361"
 )
 public interface ISbmlManager extends IBioclipseManager {
+
+    @Recorded
+    @PublishedMethod(
+        params = "String file",
+        methodSummary = "Loads an SMBL file"
+    )
+    public SBMLDocument importFile(String target) throws BioclipseException;
 
 }
